@@ -13,51 +13,51 @@ class App extends Component {
     return (
       <Router>  
         <div className="app">
-          <Header resumeObj={resume} className="left"/>
+          <Header resumeObj={resume} />
           
           <Route
-            exact path={'/'} 
+            exact path={'/react-resume/'} 
             render={({ match }) => <Card resumeObj={resume} />}
           />
           <Route
-            exact path={'/💻'}
+            exact path={'/react-resume/💻'}
             render={({ match }) => <SkillList resumeObj={resume} />}
           />
           <Route
-            exact path={'/🎒'}
+            exact path={'/react-resume/🎒'}
             render={({ match }) => <School education={resume.education[0]} />}
           />
           <Route
-            exact path={'/📧'}
+            exact path={'/react-resume/📧'}
             render={({ match }) => <Contact info={resume.basics} />}
           />
 
           <ul className="app-pages">
             <NavLink
-              exact to={'/'}
-              activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}}
+              exact to={'.'}
               className="chips blue"
+              activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}}
             >
               Work
             </NavLink>
             <NavLink
-              exact to={'/💻'}
-              activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}}
+              to={'💻'}
               className="chips blue"
+              activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}}
             >
               Skills
             </NavLink>
             <NavLink
-              exact to={'/🎒'}
-              activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}}
+              to={'🎒'}
               className="chips blue"
+              activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}}
             >
               Education
             </NavLink>
             <NavLink
-              exact to={'/📧'}
-              activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}}
+              to={'📧'}
               className="chips blue"
+              activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}}
             >
               Contact
             </NavLink>
