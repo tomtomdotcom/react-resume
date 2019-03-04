@@ -12,30 +12,56 @@ class App extends Component {
     const resume = this.props.resumeJson;
     return (
       <Router>  
-        <div className="App">
-          <Header resumeObj={resume} className="Left"/>
+        <div className="app">
+          <Header resumeObj={resume} className="left"/>
           
-          <Route exact path={'/'} render={({ match }) => <Card resumeObj={resume} />}/>
-          <Route exact path={'/💻'} render={({ match }) => <SkillList resumeObj={resume} />}/>
-          <Route exact path={'/🎒'} render={({ match }) => <School education={resume.education[0]} />}/>
-          <Route exact path={'/📧'} render={({ match }) => <Contact info={resume.basics} />}/>
-         
-        {/*Nav Menu*/}
-          <ul className="App__pages">
-            <NavLink exact to={'/'} activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}} className="chips blue">
+          <Route
+            exact path={'/'} 
+            render={({ match }) => <Card resumeObj={resume} />}
+          />
+          <Route
+            exact path={'/💻'}
+            render={({ match }) => <SkillList resumeObj={resume} />}
+          />
+          <Route
+            exact path={'/🎒'}
+            render={({ match }) => <School education={resume.education[0]} />}
+          />
+          <Route
+            exact path={'/📧'}
+            render={({ match }) => <Contact info={resume.basics} />}
+          />
+
+          <ul className="app-pages">
+            <NavLink
+              exact to={'/'}
+              activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}}
+              className="chips blue"
+            >
               Work
             </NavLink>
-            <NavLink exact to={'/💻'} activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}} className="chips blue">
+            <NavLink
+              exact to={'/💻'}
+              activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}}
+              className="chips blue"
+            >
               Skills
             </NavLink>
-            <NavLink exact to={'/🎒'} activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}} className="chips blue">
+            <NavLink
+              exact to={'/🎒'}
+              activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}}
+              className="chips blue"
+            >
               Education
             </NavLink>
-            <NavLink exact to={'/📧'} activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}} className="chips blue">
+            <NavLink
+              exact to={'/📧'}
+              activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}}
+              className="chips blue"
+            >
               Contact
             </NavLink>
           </ul>
-           
         </div>
       </Router>
     );
