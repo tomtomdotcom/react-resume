@@ -13,7 +13,7 @@ class Header extends Component {
             {basics.location.city} <span role="img" aria-label="Sun">☀️</span>
           </h4>
 
-          <p><a href="/resume.pdf">PDF version</a> of the resume.</p>
+          <p><a href="resume.pdf">PDF version</a> of the resume.</p>
           
           <div className="made-with-react">
             <a
