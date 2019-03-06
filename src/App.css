@@ -5,16 +5,17 @@
   overflow: hidden;
 }
 
-.app-logo {
+/*.app-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40px;
   vertical-align: middle;
-}
+}*/
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -108,6 +109,13 @@
   font-weight: 300;
 }
 
+.hero-arrow {
+  position: absolute;
+  left: calc(50% - 20px);
+  bottom: 20px;
+  font-size: 40px;
+}
+
 .skills-list {
   display: flex;
   flex-flow: row wrap;
@@ -143,6 +151,7 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  min-height: calc(100vh / 3);
 }
 
 .jobs-current {
@@ -182,7 +191,7 @@
   }
 
   .card-content {
-    height: 100vh;
+    /*min-height: 100vh;*/
   }
 
   .bg-gray {

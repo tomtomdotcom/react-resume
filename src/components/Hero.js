@@ -34,12 +34,13 @@ class Hero extends Component {
         <span
           role="img"
           aria-label="Arrow down"
-          style={{
-            bottom: '20px',
-            fontSize: '50px',
-            position: 'absolute',
-            left: 'calc(50% - 25px)'
-          }}
+          className="hero-arrow"
+          // style={{
+          //   bottom: '20px',
+          //   fontSize: '50px',
+          //   position: 'absolute',
+          //   left: 'calc(50% - 25px)'
+          // }}
         >
           ⬇️
         </span>
