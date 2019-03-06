@@ -4,24 +4,29 @@
     "label": "Frontend Engineer",
     "email": "skok@vova.io",
     "phone": "(609) 666-4644",
-    "website": "LinkedIn",
-    "summary": "Add summary",
+    "website": "LinkedIn.com",
+    "summary": "Organized and motivated frontend developer seeking to work closely with a team of experienced engineers to craft a product that has an impact.",
     "location": {
       "postalCode": "93101",
       "city": "San Diego",
       "countryCode": "US",
       "region": "SD"
-    }
+    },
+    "pdf": "vladimir-skok.pdf"
   },
   "work": [
     {
-      "company": "Freelancer",
+      "company": "Freelance",
       "current": false,
       "position": "Frontend Engineer",
       "startDate": "August 2017",
       "endDate": "January 2019",
-      "summary": "Work on various projects utilizing ES6, Gatsby, Sass and WordPress.",
-      "highlights": []
+      "summary": "Various projects utilizing ES6, Gatsby, Sass and WordPress.",
+      "highlights": [
+        "Improved client's development workflow by incorpating modern tools like: Webpack, Gulp, ESLint, Prettier, Jest, Ansible and others.",
+        "Ensure that the developing codebase conforms to best practices with regard to coding standards.",
+        "A/B tested multiple CTA components and improved their click-through rate"
+      ]
     },
     {
       "company": "Recovery Brands",

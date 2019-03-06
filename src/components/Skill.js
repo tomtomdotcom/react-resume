@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Skills extends Component {
+class Skill extends Component {
   render() {
     return (
       <li className="chips blue">
@@ -10,4 +10,4 @@ class Skills extends Component {
   }
 }
 
-export default Skills;
+export default Skill;

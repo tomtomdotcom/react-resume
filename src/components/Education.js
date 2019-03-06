@@ -1,6 +1,6 @@
 import React from 'react';
 
-const School = (props) => {
+const Education = (props) => {
   const { area, endDate, institution, studyType } = props.education;
   return (
     <div className="modal-container bg-gray" style={{display: 'flex'}}>
@@ -13,7 +13,7 @@ const School = (props) => {
             alignItems: 'flex-start'}
           }
         >
-        <h1 className="header-name">School:</h1>
+        <h1 className="header-name">Education</h1>
           <h3>{institution}</h3>
           <h4>{studyType} in {area}</h4>
           <h4>Graduated {endDate}</h4>
@@ -23,4 +23,4 @@ const School = (props) => {
   );
 }
     
-export default School;
+export default Education;

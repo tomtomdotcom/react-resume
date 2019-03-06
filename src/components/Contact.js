@@ -3,9 +3,9 @@ import CSSTransitionGroup from 'react-addons-css-transition-group';
 
 const Contact = (props) => {
   const { email, website } = props.info;
-  const layout = {display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}
+  const layout = {display: 'flex', flexDirection: 'column', alignItems: 'center'}
   return (
-      <div className="modal-container bg-gray" style={{display: 'flex'}}>
+      <div className="modal-container" style={{display: 'flex'}}>
         <div className="modal-content">
           <CSSTransitionGroup 
             style={layout}
@@ -14,16 +14,17 @@ const Contact = (props) => {
             transitionEnterTimeout={5000}
             transitionLeaveTimeout={3000}
           >
-            <h1 className="header-name" >Contact:</h1>
+            <h1 className="header-name" >Contact</h1>
             <a
               href="mailto:skok@vova.io?subject=Resume%20Inquiry"
-              style={{color: '#4a4a4a',textDecoration: 'none'}}
+              style={{textDecoration: 'none'}}
             >
               {email}
             </a>
+
             <a
               href="https://linkedin.com/in/iamskok"
-              style={{color: '#4a4a4a',textDecoration: 'none'}}
+              style={{ textDecoration: 'none'}}
               target="_blank"
               rel="noopener noreferrer"
             >
