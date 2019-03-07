@@ -16,31 +16,26 @@ class Hero extends Component {
         {
           basics.pdf
           ?
-          <p style={{fontWeight: '900'}}><a href={basics.pdf}>PDF version</a> of the resume.</p>
+          <p className="hero-text"><a href={basics.pdf}>PDF version</a> of the resume.</p>
           :
           ''
         }
         
-        <div className="made-with-react">
+        <div className="hero-link-container">
           <a
             href="https://github.com/iamskok/react-resume"
             target="_blank"
             rel="noopener noreferrer"
+            className="hero-link"
           >
             made with 
-            <img src={logo} className="app-logo" alt="Made With React Logo"/>
+            <img src={logo} className="hero-logo" alt="Made With React Logo"/>
           </a>
         </div>
         <span
           role="img"
           aria-label="Arrow down"
           className="hero-arrow"
-          // style={{
-          //   bottom: '20px',
-          //   fontSize: '50px',
-          //   position: 'absolute',
-          //   left: 'calc(50% - 25px)'
-          // }}
         >
           ⬇️
         </span>

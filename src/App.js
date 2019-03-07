@@ -34,32 +34,16 @@ class App extends Component {
 
           <ul className="nav-container">
             <nav className="nav">
-              <NavLink
-                exact to={'.'}
-                className="nav-btn"
-                activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}}
-              >
+              <NavLink exact to={'.'} className="nav-btn">
                 Experience
               </NavLink>
-              <NavLink
-                to={'💻'}
-                className="nav-btn"
-                activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}}
-              >
+              <NavLink to={'💻'} className="nav-btn">
                 Skills
               </NavLink>
-              <NavLink
-                to={'🎒'}
-                className="nav-btn"
-                activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}}
-              >
+              <NavLink to={'🎒'} className="nav-btn">
                 Education
               </NavLink>
-              <NavLink
-                to={'📧'}
-                className="nav-btn"
-                activeStyle={{fontWeight: 'bold', boxShadow: '1px 0px 0px rgba(0, 0, 0, 0.4)'}}
-              >
+              <NavLink to={'📧'} className="nav-btn">
                 Contact
               </NavLink>
             </nav>

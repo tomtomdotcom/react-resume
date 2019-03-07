@@ -5,13 +5,21 @@
   overflow: hidden;
 }
 
-/*.app-logo {
-  animation: App-logo-spin infinite 20s linear;
+.hero-link-container {}
+
+.hero-link {}
+
+.hero-logo {
+  animation: hero-logo infinite 20s linear;
   height: 40px;
   vertical-align: middle;
-}*/
+}
 
-@keyframes App-logo-spin {
+.hero-text {
+  font-weight: 700;
+}
+
+@keyframes hero-logo {
   from {
     transform: rotate(0deg);
   }
@@ -49,15 +57,18 @@
   left: -50%;
 }
 
-.made-with-react {
+/*.made-with-react {
   display: flex;
   align-items: center;
   flex-direction: row;
   font-size: 10px;
-}
+}*/
 
 .card-container,
-.modal-container {
+.modal-container,
+.skills-list-container,
+.contact-container, 
+.education-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,6 +85,13 @@
   width: 40%;
   padding: 30px;
   position: relative;
+}
+
+.contact-container {}
+.contact-modal {}
+
+.contact-header {
+  color: #4a4a4a;
 }
 
 .card-container,
@@ -109,11 +127,40 @@
   font-weight: 300;
 }
 
+@keyframes hero-arrow {
+  from {
+    opacity: 0.25;
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+
+  to {
+    opacity: 0.25;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
 .hero-arrow {
   position: absolute;
   left: calc(50% - 20px);
   bottom: 20px;
   font-size: 40px;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: hero-arrow;
+}
+
+.skills-list-container {}
+
+.skills-list-modal {}
+.skills-list-header {
+  color: #4a4a4a;
+  text-align: center;
 }
 
 .skills-list {
@@ -122,6 +169,35 @@
   list-style: none;
 }
 
+.skill {
+  margin: 2px 4px 2px 0;
+  color: #fff;
+  padding: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  background: #3b80fe;
+}
+
+.education-header {
+  margin: 0 auto;
+}
+
+.education-text {
+  text-align: center;
+}
+
+.education-subheader {
+  margin-bottom: 20px;
+}
+
+.contact-header,
+.education-header,
+.skills-list-header,
+.hero-header {
+  margin-bottom: 20px;
+}
+
+/*
 .chips {
   margin: 2px 4px 2px 0;
   color: white;
@@ -136,48 +212,58 @@
 
 .chips.teal {
   background: #54e7c7;
-}
+}*/
 
 .card-content {
   width: 100%;
 }
 
-.jobs-container {
-  background: #54e7c7;
-  color: #fafafa;
-  width: 100%;
-  padding: 50px;
+.job-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   min-height: calc(100vh / 3);
+  width: 100%;
+  padding: 50px;
+  color: #fafafa;
+  background: #54e7c7;
 }
 
-.jobs-current {
+.job-date {
   font-size: 14px;
   font-weight: 300;
 }
 
-.jobs-flex div {
-  font-weight: 400;
+.job-paragraph {
+  font-style: italic;
 }
+
+/*
+.jobs-main div {
+  font-weight: 400;
+}*/
 
 .job-summary {
   line-height: 1.5;
 }
 
-.job-highlights {
+/*.job-highlights {
   list-style: none;
   font-weight: 200;
-}
+}*/
 
 @media (min-width: 991px) {
   .hero {
     width: 40%;
   }
 
+  .hero-arrow {
+    display: none;
+  }
+
   .card-container {
+    height: 100vh;
     overflow: auto;
   }
 
@@ -191,7 +277,8 @@
   }
 
   .card-content {
-    /*min-height: 100vh;*/
+    height: 100vh;
+    overflow-y: auto;
   }
 
   .bg-gray {
@@ -205,6 +292,16 @@
   .nav-container {
     left: 20%;
   }
+
+  .education-container,
+  .contact-container,
+  .skills-list-container {
+    width: 60%;
+  }
+
+  /*.skills-list-header {
+    text-align: center;
+  }*/
 }
 
 @media (max-width: 990px) {
@@ -224,7 +321,10 @@
     text-align: center;
   }
 
-  .modal-container {
+  .modal-container,
+  .skills-list-container,
+  .education-container,
+  .contact-container {
     display: none;
     position: fixed;
     z-index: 1;
@@ -237,7 +337,10 @@
     background-color: rgba(0,0,0,0.4);
   }
 
-  .modal-content {
+  .modal-content,
+  .skills-list-modal,
+  .education-modal,
+  .contact-modal {
     background-color: #fefefe;
     margin: 0 auto;
     padding: 20px;

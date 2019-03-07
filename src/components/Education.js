@@ -3,8 +3,8 @@ import React from 'react';
 const Education = (props) => {
   const { area, endDate, institution, studyType } = props.education;
   return (
-    <div className="modal-container bg-gray" style={{display: 'flex'}}>
-      <div className="modal-content">
+    <div className="education-container" style={{display: 'flex'}}>
+      <div className="education-modal">
         <div style={
           {
             color: '#4a4a4a',
@@ -13,10 +13,12 @@ const Education = (props) => {
             alignItems: 'flex-start'}
           }
         >
-        <h1 className="header-name">Education</h1>
-          <h3>{institution}</h3>
-          <h4>{studyType} in {area}</h4>
-          <h4>Graduated {endDate}</h4>
+        <h1 className="education-header">Education</h1>
+          <div className="education-text">
+            <h4 className="education-subheader">{institution}</h4>
+            <h5>{studyType} in {area}</h5>
+            <h5>Graduated {endDate}</h5>
+          </div>
         </div>
       </div>
     </div>

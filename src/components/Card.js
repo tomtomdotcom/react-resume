@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Jobs from './Jobs';
+import Jobs from './Job';
 
 class Card extends Component {
   render() {

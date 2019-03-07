@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Skill extends Component {
   render() {
     return (
-      <li className="chips blue">
+      <li className="skill">
         {this.props.details}
       </li>
     );
