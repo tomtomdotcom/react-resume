@@ -7,11 +7,11 @@ class SkillsList extends Component {
   
     return (
       <div
-        className="skills-list-container"
+        className="skills-list__container"
         style={{display: 'flex'}}
       >
-        <div className="skills-list-modal">
-          <h1 className="skills-list-header">Skill Set</h1>
+        <div className="skills-list__modal">
+          <h1 className="skills-list__header">Skill Set</h1>
           <br />
           <ul className="skills-list">
             {

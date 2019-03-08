@@ -16,7 +16,7 @@ class App extends Component {
           <Hero resumeObj={resume} />
           
           <Route
-            exact path={'/react-resume/'} 
+            exact path={'/react-resume/'}
             render={({ match }) => <Card resumeObj={resume} />}
           />
           <Route
@@ -32,20 +32,12 @@ class App extends Component {
             render={({ match }) => <Contact info={resume.basics} />}
           />
 
-          <ul className="nav-container">
+          <ul className="nav__container">
             <nav className="nav">
-              <NavLink exact to={'.'} className="nav-btn">
-                Experience
-              </NavLink>
-              <NavLink to={'💻'} className="nav-btn">
-                Skills
-              </NavLink>
-              <NavLink to={'🎒'} className="nav-btn">
-                Education
-              </NavLink>
-              <NavLink to={'📧'} className="nav-btn">
-                Contact
-              </NavLink>
+              <NavLink exact to={'.'} className="nav__btn">Experience</NavLink>
+              <NavLink to={'💻'} className="nav__btn">Skills</NavLink>
+              <NavLink to={'🎒'} className="nav__btn">Education</NavLink>
+              <NavLink to={'📧'} className="nav__btn">Contact</NavLink>
             </nav>
           </ul>
         </div>

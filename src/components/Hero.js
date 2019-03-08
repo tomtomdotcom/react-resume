@@ -7,8 +7,8 @@ class Hero extends Component {
   
     return (
       <div className="hero">
-        <h1 className="hero-header">{basics.name}</h1>
-        <h4 className="hero-subheader">
+        <h1 className="hero__header">{basics.name}</h1>
+        <h4 className="hero__subheader">
           {basics.location.city} <span role="img" aria-label="Sun">☀️</span>
         </h4>
 
@@ -16,26 +16,26 @@ class Hero extends Component {
         {
           basics.pdf
           ?
-          <p className="hero-text"><a href={basics.pdf}>PDF version</a> of the resume.</p>
+          <p className="hero__text"><a href={basics.pdf}>PDF version</a> of the resume.</p>
           :
           ''
         }
         
-        <div className="hero-link-container">
+        <div className="hero__link-container">
           <a
             href="https://github.com/iamskok/react-resume"
             target="_blank"
             rel="noopener noreferrer"
-            className="hero-link"
+            className="hero__link"
           >
             made with 
-            <img src={logo} className="hero-logo" alt="Made With React Logo"/>
+            <img src={logo} className="hero__logo" alt="Made With React Logo"/>
           </a>
         </div>
         <span
           role="img"
           aria-label="Arrow down"
-          className="hero-arrow"
+          className="hero__arrow"
         >
           ⬇️
         </span>

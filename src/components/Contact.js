@@ -5,8 +5,8 @@ const Contact = (props) => {
   const { email, website } = props.info;
   const layout = {display: 'flex', flexDirection: 'column', alignItems: 'center'}
   return (
-      <div className="contact-container" style={{display: 'flex'}}>
-        <div className="contact-modal">
+      <div className="contact__container" style={{display: 'flex'}}>
+        <div className="contact__modal">
           <CSSTransitionGroup 
             style={layout}
             component="div"
@@ -14,7 +14,7 @@ const Contact = (props) => {
             transitionEnterTimeout={5000}
             transitionLeaveTimeout={3000}
           >
-            <h1 className="contact-header" >Contact</h1>
+            <h1 className="contact__header" >Contact</h1>
 
             <h3>
               <a

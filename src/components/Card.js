@@ -7,12 +7,12 @@ class Card extends Component {
     const bgColors = ['#4bdb8b', '#db7093', '#009ee2', '#ffab91'];
    
     return (
-      <div className="card-container">
-        <div className="card-content">
+      <div className="card__container">
+        <div className="card__content">
          {
             work.map((key, index) => {
               return (
-                <Jobs 
+                <Jobs
                   key={index} 
                   details={work[index]}
                   colors={bgColors[index]}
