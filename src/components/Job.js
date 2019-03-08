@@ -4,7 +4,7 @@ class Job extends Component {
   render() {
     const { details, colors } = this.props;
     return (
-      <div className="job__container" style={{background:colors}}>
+      <div className="job__container" style={{background: colors}}>
           <div className="job">
             <div className="job__header">
               <h3>{details.company}</h3>
