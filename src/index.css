@@ -61,3 +61,10 @@ li {
   margin: 0;
   padding: 0;
 }
+
+img.me {
+  border-radius: 50%;
+  height: auto;
+  width: 60%;
+  margin-bottom: 50px;
+}
