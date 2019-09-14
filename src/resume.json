@@ -1,95 +1,91 @@
 {
   "basics": {
-    "name": "Vladimir Skok",
-    "label": "Frontend Engineer",
-    "email": "skok@vova.io",
-    "phone": "(609) 666-4644",
-    "website": "linkedin.com",
-    "summary": "Organized and motivated frontend developer seeking to work closely with a team of experienced engineers to craft a product that has an impact.",
+    "name": "Tom Ward",
+    "label": "Software Engineer",
+    "email": "me@thomasward.net",
+    "phone": "+447470029358",
+    "website": "thomasward.net",
+    "summary": "Experienced and motivated Software Engineer with experience in scalable cloud based processing of real-time data using AWS solutions in Javascript/Typescript. Using React on the front-end.",
     "location": {
-      "postalCode": "93101",
-      "city": "San Diego",
-      "countryCode": "US",
-      "region": "SD"
+      "postalCode": "CR0 2FH",
+      "city": "London",
+      "countryCode": "GB",
+      "region": "London"
     },
-    "pdf": "vladimir-skok.pdf"
+    "pdf": "thomas-ward.pdf"
   },
   "work": [
     {
-      "company": "Freelance",
+      "company": "Hero",
       "current": false,
-      "position": "Frontend Engineer",
-      "startDate": "August 2017",
-      "endDate": "January 2019",
-      "summary": "Various projects utilizing ES6, Gatsby, Sass and WordPress.",
+      "position": "Backend Developer",
+      "startDate": "July 2019",
+      "endDate": "November 2019",
+      "summary": "Migrated messaging services between two platforms, NodeJS, Webhooks, MongoDB & AWS Tools.",
       "highlights": [
-        "Improved client's development workflow by incorpating modern tools like: Webpack, Gulp, ESLint, Prettier, Jest, Ansible and others.",
-        "Ensure that the developing codebase conforms to best practices with regard to coding standards.",
-        "A/B tested multiple CTA components and improved conversions by 23%"
+        "Migrated backend APIs between two messaging services.",
+        "Setup AWS Dashboards/Alarms as DevOps.",
+        "Clear & Concise code reviews for both front-end & back-end projects"
       ]
     },
     {
-      "company": "Recovery Brands",
+      "company": "Kwiff Gaming",
       "current": false,
-      "position": "Frontend Engineer",
-      "website": "https://www.recoverybrands.com",
-      "startDate": "May 2013",
-      "endDate": "June 2017",
-      "summary": "Add features and fix bugs for Recovery Brands network of websites.",
+      "position": "Software Engineer",
+      "website": "https://www.kwiff.com",
+      "startDate": "November 2018",
+      "endDate": "July 2019",
+      "summary": "Aided in the refactor from a legacy proof of concept to a more modular and maintainable code base using TypeScript/GraphQL.",
       "highlights": [
-        "Built \"Recovery Brands\" Sass framework, its automated build process, and documentation.",
-        "Implemented structured data markup across multiple websites of \"Recovery Brands\" network, which led to a 5% increase in CTR.",
-        "Consistently took part in adding new features for a network of 20+ WordPress websites (such as Rehabs.com) with a total amount of 5m+ visitors per month.",
-        "Ran workshops and talks on CSS & Sass architecture for the team of 5 frontend developers."
+        "Created and helped implement strict but effective Linting/Formatting rules (TSLint/Prettier)",
+        "Aided DevOps with monitoring new microservices/ deployment pipelines.",
+        "Rapid development of a ReactJS Mobile Casino WebApp which was deployed to production with 0 issues.",
+        "Worked alongside Front End Developers whilst implementing a new sign up flow",
+        "Helped debug issues out of hours and was always on hand for emergencies."
       ]
     },
     {
-      "company": "Udacity",
+      "company": "Salecycle",
       "current": false,
-      "position": "Frontend Developer [Remote]",
-      "website": "https://www.udacity.com",
-      "startDate": "April 2016",
-      "endDate": "August 2016",
-      "summary": "Sass architecture and development of Udacity Blitz React app.",
+      "position": "Software Engineer",
+      "website": "https://www.salecycle.com",
+      "startDate": "May 2015",
+      "endDate": "November 2018",
+      "summary": "Full stack software engineer specialising in JavaScript/TypeScript on the frontend and NodeJs/Java on the backend. Mostly involved in transitioning a legacy C#/.NET/SQL stack to a scalable cloud based solution using various AWS solutions.",
       "highlights": [
-        "Frontend Sass development with the focus on reusability and cross-browser compatibility.",
-        "Implemented the Udacity Blitz UI kit using Sass.",
-        "Implemented UI atoms."
+        "Built a series of micro-services built from the AWS stack (Kinesis Consumer/Producer Libraries and Kinesis streams) used to power real time aggregated dashboards using Apache Flink and Druid displayed in a react front-end app.",
+        "Built/maintained a testing bridge allowing QA engineers to easily test a kinesis streams input/output at any part of the system.",
+        "Contributed to services which were the front-door to the data processing system which does some basic data validation; along with services to compile handlebars emails.",
+        "API first development, using the AWS API Gateway to authenticate all API requests. ",
+        "Aided the implementation Team with internal tools built using NodeJS deployed in docker containers to AWS ECS to automate testing and speed up the implementation process. (Javascript/Node/React/SQS/AWS)"
       ]
     }
   ],
-  "education": [{
-    "institution": "The Russian Presidential Academy of National Economy and Public Administration (RANEPA)",
-    "area": "Business Administration and Management",
-    "studyType": "Master's degree",
-    "endDate": "2013"
-  }],
+  "education": [
+    {
+      "institution": "University Of Sunderland",
+      "area": "Computer Forensics & Ethical Hacking",
+      "studyType": "Bachelor's Degree",
+      "endDate": "2014"
+    }
+  ],
   "skills": {
     "keywords": [
       "HTML",
       "CSS",
       "Javascript",
+      "TypeScript",
+      "Java",
       "ES6",
+      "AWS",
+      "Webhooks",
+      "Flink",
       "React",
       "Gatsby",
       "Node",
       "Sass",
       "Git",
-      "WordPress",
-      "REST APIs",
-      "Ansible",
-      "Vagrant",
-      "Virtual Box",
-      "Jenkins",
-      "Jest",
-      "Jasmine",
-      "Mocha",
-      "Phantom",
-      "Firebase",
-      "TypeScript",
-      "Linux",
-      "Mac OS",
-      "Liquid"
+      "REST APIs"
     ]
   }
 }
